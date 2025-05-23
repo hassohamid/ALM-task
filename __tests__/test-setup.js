@@ -2,7 +2,7 @@ process.env.NODE_ENV = "test";
 
 const sequelize = require("../src/config/database");
 const User = require("../src/models/User");
-const Accommodation = require("../src/models/Accommodation");
+const Accommodation = require("../src/models/accommodation");
 
 // 🧩 Lägg till associationerna här:
 User.hasMany(Accommodation, {
